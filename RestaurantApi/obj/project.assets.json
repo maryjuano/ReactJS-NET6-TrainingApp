@@ -9657,11 +9657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joseph Cadiao\\source\\repos\\RestaurantApi\\RestaurantApi\\RestaurantApi.csproj",
+      "projectUniqueName": "C:\\Users\\Joseph Cadiao\\Documents\\GitHub\\ReactJS-NET6-TrainingApp\\RestaurantApi\\RestaurantApi.csproj",
       "projectName": "RestaurantApi",
-      "projectPath": "C:\\Users\\Joseph Cadiao\\source\\repos\\RestaurantApi\\RestaurantApi\\RestaurantApi.csproj",
+      "projectPath": "C:\\Users\\Joseph Cadiao\\Documents\\GitHub\\ReactJS-NET6-TrainingApp\\RestaurantApi\\RestaurantApi.csproj",
       "packagesPath": "C:\\Users\\Joseph Cadiao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joseph Cadiao\\source\\repos\\RestaurantApi\\RestaurantApi\\obj\\",
+      "outputPath": "C:\\Users\\Joseph Cadiao\\Documents\\GitHub\\ReactJS-NET6-TrainingApp\\RestaurantApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joseph Cadiao\\AppData\\Roaming\\NuGet\\NuGet.Config",
