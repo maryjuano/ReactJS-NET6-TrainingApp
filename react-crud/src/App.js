@@ -14,6 +14,7 @@ export default function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="voters" element={<Voter />} />
                     <Route path="voters/new" element={<VoterForm />} />
+                    <Route path="voters/:id" element={<VoterForm />} />
                 </Routes>
             </Container>
         </>

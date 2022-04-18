@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import VoterList from './VoterList'
 import { useNavigate } from 'react-router-dom'
-import { Button } from 'react-bootstrap'
+import { Button, Col, Row, Stack } from 'react-bootstrap'
 
 export default function Voter() {
+    
     let navigation = useNavigate()
     const [data, setData] = useState([])
 
@@ -13,13 +14,12 @@ export default function Voter() {
         { id: 3, text: "Last Name" }
     ]
 
-
     useEffect(() => {
         fetch("https://localhost:7015/api/Voters",
             {
                 method: "GET",
-                headers: {                  
-                    "Access-Control-Allow-Origin" : "*",
+                headers: {
+                    "Access-Control-Allow-Origin": "*",
                     "Content-type": "application/json; charset=UTF-8"
                 }
             })
@@ -35,14 +35,33 @@ export default function Voter() {
     }, [])
 
     function goToAdd() {
-        navigation("/voters/new", { replace : true })
+        navigation("/voters/new", { replace: true })
     }
 
     return (
         <>
-            <h1>Voter List</h1>
-            <Button variant="success" onClick={goToAdd}>Add</Button>
-            <VoterList columns={columns} data={data} />
+            <Row>
+                <Col><h1>Voter List</h1></Col>
+                <Col></Col>
+                <Col></Col>
+                <Col>
+                </Col>
+            </Row>
+            <Stack>
+                <Row>
+                    <Col><Button variant="success" onClick={goToAdd}>Add</Button></Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <VoterList columns={columns} data={data} />
+                    </Col>
+                </Row>
+            </Stack>
+
+            <Row>
+
+
+            </Row>
         </>
     )
 }
