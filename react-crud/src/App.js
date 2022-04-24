@@ -5,6 +5,8 @@ import Top from './components/Navigation';
 import Voter from './components/Voter';
 import VoterForm from './components/Voter/VoterForm';
 
+
+
 export default function App() {
     return (
         <>

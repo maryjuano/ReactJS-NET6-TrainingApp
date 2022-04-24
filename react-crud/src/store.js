@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import voterSlice from './slices/voterSlice'
+import voterReducer from './slices/voterSlice'
 
 export default configureStore({
     reducer: {
-        voter: voterSlice
+        voter: voterReducer
     }
 })

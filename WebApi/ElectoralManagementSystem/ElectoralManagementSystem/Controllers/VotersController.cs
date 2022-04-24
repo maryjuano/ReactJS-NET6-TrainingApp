@@ -43,7 +43,7 @@ namespace ElectoralManagementSystem.Controllers
         {
             _sqLiteDbContext.Voters.Add(newVoter);
             await _sqLiteDbContext.SaveChangesAsync();
-            return Ok();
+            return Ok(newVoter);
         }
 
         // PUT api/<VotersController>/5
